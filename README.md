@@ -1,7 +1,9 @@
 # pi-top SDK Installer
+
 This is a Shell script that will install the pi-top SDK and its dependecies automatically
 
 ## What does the script do exactly?
+
 1. It will update your system
 2. Check your version of Raspberry Pi OS by checking /boot/issue.txt
 3. If its Lite version then it will install the following
@@ -19,4 +21,5 @@ This is a Shell script that will install the pi-top SDK and its dependecies auto
 6. then it will install the pi-top SDK
 
 ## Usage
-wget https://github.com/CAProjects/pi-topSDK-installer/blob/4ed8f18828a1e4712d7b68f3667135ad0917ce6a/sdk-installer.sh | bash
+
+wget -O - https://raw.githubusercontent.com/CAProjects/pi-topSDK-installer/main/sdk-installer.sh | bash
