@@ -41,7 +41,7 @@ if test -f "$FILE"; then
         clear
         echo "OS Version is Raspberry Pi Minimal or Full"
         echo "Installing SDK dependencies for Minimal/full"
-        sleep3s
+        sleep 3s
         sudo python3 -m pip install opencv-python
         echo
         echo "SDK dependencies installed, Installing the pi-top SDK"
