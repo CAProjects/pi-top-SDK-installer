@@ -23,7 +23,7 @@ sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y
 
 clear
 echo "Update has completed"
-echo "Checking if your using Raspbery Pi Lite, Minimal or full"
+echo "Checking Raspbery Pi OS version || Lite, Minimal or full"
 sleep 3s
 echo
 if test -f "$FILE"; then
