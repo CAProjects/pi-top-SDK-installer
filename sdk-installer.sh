@@ -5,7 +5,7 @@ echo
 echo "this script was created by CAProjects"
 echo "to help with installing the pi-top SDK"
 echo
-echo "What this script does is check what "
+echo "What this script does is check what version"
 echo "of Raspberry Pi OS your running and then"
 echo "installs the required dependencies for the"
 echo "pi-top SDK and also the SDK itself"
