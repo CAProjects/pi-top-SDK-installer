@@ -28,21 +28,23 @@ if test -f "$FILE"; then
     if grep "stage1" "$FILE"; then
         echo "Well i dont know what to do here, sorry, you have an unsupported version"
     elif grep "stage2" "$FILE"; then
+        clear
         echo "OS Version is Raspberry Pi Lite"
         echo "Installing SDK dependencies for Lite"
+        sleep 3s
         sudo apt install -y python3-pip libopenjp2-7 libilmbase-dev libopenexr-dev libgstreamer1.0-dev libavcodec-dev libavformat-dev libswscale-dev
         sudo python3 -m pip install opencv-python
         echo
         echo "SDK dependencies installed, Installing the pi-top SDK"
-        echo
         sleep 3s
     else
-        echo "OS Version contains a minimal or full Desktop environment"
+        clear
+        echo "OS Version is Raspberry Pi Minimal or Full"
         echo "Installing SDK dependencies for Minimal/full"
+        sleep3s
         sudo python3 -m pip install opencv-python
         echo
         echo "SDK dependencies installed, Installing the pi-top SDK"
-        echo
         sleep 3s
     fi
 fi
