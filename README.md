@@ -5,7 +5,10 @@ This is a Shell script that will install the pi-top SDK and its dependecies auto
 ## What does the script do exactly?
 
 1. It will update your system
-2. Check your version of Raspberry Pi OS by checking /boot/issue.txt
+2. Check your version of Raspberry Pi OS stage by checking /boot/issue.txt
+   * Stage 2 - Lite
+   * Stage 4 - Mininmal
+   * Stage 5 - Full
 3. If its Lite version then it will install the following
    * python3-pip
    * libopenjp2-7 
@@ -19,6 +22,8 @@ This is a Shell script that will install the pi-top SDK and its dependecies auto
 4. If its Minimal or Full it will install only openCV
 5. It will then add the pi-top repo and apt key
 6. then it will install the pi-top SDK
+
+You will know if it suceeded in installing everything correctly when you see the pi-top animation start on the OLED followed by the menu system (default Battery status)
 
 ## Usage
 
