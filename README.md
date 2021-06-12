@@ -22,4 +22,4 @@ This is a Shell script that will install the pi-top SDK and its dependecies auto
 
 ## Usage
 
-wget -O - https://raw.githubusercontent.com/CAProjects/pi-topSDK-installer/main/sdk-installer.sh | bash
+wget -O - https://raw.githubusercontent.com/CAProjects/pi-top-SDK-installer/main/sdk-installer.sh | bash
