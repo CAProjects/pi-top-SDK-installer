@@ -28,6 +28,7 @@ sleep 3s
 echo
 if test -f "$FILE"; then
     if grep "stage4" "/boot/issue.txt" || grep "stage5" "/boot/issue.txt"; then
+        clear
         echo "OS Version is Raspberry Pi Minimal or Full"
         echo "Installing SDK dependencies for Minimal/full"
         sleep 3s
