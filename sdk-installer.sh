@@ -11,41 +11,33 @@ echo "installs the required dependencies for the"
 echo "pi-top SDK and also the SDK itself"
 echo
 echo "This script will start in 5 seconds"
-sleep 5s
-
 FILE=/boot/issue.txt
 clear
 echo "****************************************"
 echo "* Updating your system before we start *"
 echo "****************************************"
-sleep 3s
 sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y
 
 clear
 echo "Update has completed"
 echo "Checking Raspbery Pi OS version || Lite, Minimal or full"
-sleep 3s
 echo
 if test -f "$FILE"; then
     if grep "stage4" "/boot/issue.txt" || grep "stage5" "/boot/issue.txt"; then
         clear
         echo "OS Version is Raspberry Pi Minimal or Full"
         echo "Installing SDK dependencies for Minimal/full"
-        sleep 3s
         sudo python3 -m pip install opencv-python
         echo
         echo "SDK dependencies installed, Installing the pi-top SDK"
-        sleep 3s
     elif grep "stage2" "$FILE"; then
         clear
         echo "OS Version is Raspberry Pi Lite"
         echo "Installing SDK dependencies for Lite"
-        sleep 3s
         sudo apt install -y python3-pip libopenjp2-7 libilmbase-dev libopenexr-dev libgstreamer1.0-dev libavcodec-dev libavformat-dev libswscale-dev
         sudo python3 -m pip install opencv-python
         echo
         echo "SDK dependencies installed, Installing the pi-top SDK"
-        sleep 3s
     else
         echo "Sorry, you have an unsupported Raspberry Pi OS version"
         echo "Terminating Script..."
